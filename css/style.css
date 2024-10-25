@@ -34,6 +34,7 @@ body {
     margin-right: auto;
     margin-bottom: 10vh;
     writing-mode: vertical-rl;
+    user-select: none;
 }
 
 p {
@@ -186,6 +187,7 @@ footer {
     height: 120rem;
     animation: horizontal 5s linear infinite ;
     /*animation-fill-mode: forwards;*/
+    user-select: none;
 }
 
 @keyframes horizontal {
@@ -232,8 +234,4 @@ footer {
     width: 100%;
     margin-top: 0;
  }
-<<<<<<< HEAD
  }
-=======
- }
->>>>>>> d1ac61d1f8f2d8503530992a35e7d44e1b4588e8
