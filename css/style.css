@@ -1,6 +1,6 @@
 @media screen and (min-width: 721px) {
     html {
-    font-size: 75%;
+        font-size: 75%;
     }
 }
 @media screen and (max-width: 720px) {
@@ -8,11 +8,228 @@
         font-size: 62.5%;
     }
 }
+
     
 body {
     margin: 0;
     font-size: 1.6rem;
-    font-family: sans-serif;
+    font-family: serif;
     color: white;
-    background-color: black;
+    background-color: gray;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    font-family: "Yuji Syuku", serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'font';
+    src: url(../font/HOT-Soshokk-R.otf) format("opentype");
+  }
+
+.title {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+    writing-mode: vertical-rl;
+}
+
+p {
+    display: block;
+    position: relative;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.time::before {
+    writing-mode: vertical-rl;
+    position: absolute;
+    content: '日時';
+    top: -6rem;
+    right: 0.5rem;
+    font-size: 2rem;
+}
+
+.place::before {
+    writing-mode: vertical-rl;
+    position: absolute;
+    content: '場所';
+    top: -6rem;
+    right: 0.5rem;
+    font-size: 2rem;
+}
+
+.fee::before {
+    writing-mode: vertical-rl;
+    position: absolute;
+    content: '料金';
+    top: -6rem;
+    right: 0.5rem;
+    font-size: 2rem;
+}
+
+.cast::before {
+    writing-mode: vertical-rl;
+    position: absolute;
+    content: 'キャスト';
+    top: -6rem;
+    right: 0.5rem;
+    font-size: 2rem;
+}
+
+.staff::before {
+    writing-mode: vertical-rl;
+    position: absolute;
+    content: 'スタッフ';
+    top: -6rem;
+    right: 0.5rem;
+    font-size: 2rem;
+}
+
+.about::before {
+    writing-mode: vertical-rl;
+    position: absolute;
+    content: '劇団紹介';
+    top: -6rem;
+    right: 0.5rem;
+    font-size: 2rem;
+}
+
+.contact::before {
+    writing-mode: vertical-rl;
+    position: absolute;
+    content: 'お問い合わせ';
+    top: -6rem;
+    right: 0.5rem;
+    font-size: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid;
+    height: 120px;
+}
+
+/*---クレジットのcss---*/
+.credit {
+    display: flex;
+}
+.list {
+    display: block; 
+    width: 30%; 
+    text-align: right; 
+    float: left; 
+    margin-right: 10%;
+    word-break: keep-all;
+}
+.name {
+    display: block; 
+    width: 60%; 
+    text-align: left;
+    word-break: keep-all;
+}
+/*------フェードインのCSS--------*/
+
+.underline {
+    opacity: 0;
+    padding-right: 40%;
+    transition: 1s;
+}
+.underline::before {
+    border-left: 2px solid;
+    text-align: left;
+    height: 13rem;
+    transition: 0.5s;
+ }
+
+.underline.active {
+    transition: 1s;
+    opacity: 1;
+    padding-right: 10%;
+}
+
+/*-------ロゴのCSS-------*/
+.logo_box {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.logo {
+    width: 2rem;
+}
+
+/*----------------------*/
+.sentence_box {
+    display: flex;
+    justify-content: center;
+}
+
+.copy {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    left: 10px;
+    color: red;
+    z-index: -1;
+    font-size: 3.5rem;
+    writing-mode: vertical-rl;
+    height: 120rem;
+    animation: horizontal 5s linear infinite ;
+    /*animation-fill-mode: forwards;*/
+}
+
+@keyframes horizontal {
+    0% { 
+        opacity: 0.2;
+    }
+    50% { 
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.2;
+    }
+ }
+
+ /*----------------*/
+ .shinigami {
+    position: relative;
+    font-size: 25rem;
+    font-family: "font", sans-serif;
+ }
+
+ .shinigami::before {
+    position: absolute;
+    z-index:-1;
+    left: -60px;
+    bottom: -60px;
+    content: '死神';
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #9b1414;
+    opacity: 0.8;
+ }
+ /**/
+ @media screen and (max-width: 720px) {
+    .map {
+        display: none;
+    }
+ }
+ @media screen and (min-width: 721px) {
+    
+ .map {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+ }
+ }
