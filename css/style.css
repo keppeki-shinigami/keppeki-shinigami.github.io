@@ -127,7 +127,7 @@ footer {
 }
 .list {
     display: block; 
-    width: 30%; 
+    width: 40%; 
     text-align: right; 
     float: left; 
     margin-right: 10%;
@@ -135,7 +135,7 @@ footer {
 }
 .name {
     display: block; 
-    width: 60%; 
+    width: 50%; 
     text-align: left;
     word-break: keep-all;
 }
