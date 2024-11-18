@@ -1,3 +1,34 @@
+
+// https://qiita.com/teloppy_com/items/cd483807813af5a4a38a //
+const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));//timeはミリ秒
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const load = document.getElementById('load');
+  const symbol = document.getElementById('load-symbol');
+  load.classList.remove('loaded');
+  symbol.classList.remove('loaded');
+});
+
+window.onload = function() {
+  const load = document.getElementById('load');
+  const copy = document.getElementById('copy');
+  const symbol = document.getElementById('load-symbol');
+  async function hogehoge() {
+    symbol.classList.add('loaded');
+    await sleep(1000);
+    copy.classList.add('loaded2');
+  }
+  hogehoge();
+
+  const delayedFunction = () => {
+    load.classList.add('loaded');
+    copy.classList.remove('loaded2');
+  }
+  setTimeout(delayedFunction, 1500);
+  
+
+};
+
 $(window).on('scroll',function(){
 
     $(".underline").each(function(){
@@ -35,5 +66,62 @@ $(function () {
       });
   });
 });
+
+
+/*メニュー */
+const button = document.getElementById('btn');
+const pos1 = document.getElementById('pos1');
+const pos2 = document.getElementById('pos2');
+const pos3 = document.getElementById('pos3');
+const topmenu = document.getElementById('top-menu');
+const cover = document.getElementById('cover');
+
+button.addEventListener('click', function() {
+  pos1.classList.toggle('clicked2');
+  pos2.classList.toggle('clicked2');
+  pos3.classList.toggle('clicked2');
+  topmenu.classList.toggle('clicked');
+  cover.classList.toggle('clicked');
+});
+
+const summary = document.getElementById('summary');
+const li = document.getElementsByClassName('lili');
+const li2 = document.getElementsByClassName('lilili');
+
+summary.addEventListener('click', function() {
+  // 数秒後に実行する関数を定義
+  const delayedFunction = () => {
+    for (let i = 0; i < li.length; i++) {
+      li[i].classList.toggle('moved');
+    }
+  };
+  // 2秒後にdelayedFunctionを実行（調整可能）
+  setTimeout(delayedFunction, 0);
+});
+
+
+$(document).on('click', 'a.lilili', function(e) {
+	e.preventDefault(); //htmlデフォルトの挙動をキャンセルする
+  const link = $(this).attr('href');
+  pos1.classList.toggle('clicked2');
+  pos2.classList.toggle('clicked2');
+  pos3.classList.toggle('clicked2');
+  topmenu.classList.toggle('clicked');
+  cover.classList.toggle('clicked');
+  window.location.href = link
+});
+
+/*
+https://aya404.com/blog/develop/167_a-href-jquery/
+*/
+
+
+
+
+
+
+
+
+
 
 
