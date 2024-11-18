@@ -84,7 +84,7 @@ button.addEventListener('click', function() {
   cover.classList.toggle('clicked');
 });
 
-const summary = document.getElementById('summary');
+const summary = document.getElementById('summaryid');
 const li = document.getElementsByClassName('lili');
 const li2 = document.getElementsByClassName('lilili');
 
