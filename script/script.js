@@ -24,7 +24,7 @@ window.onload = function() {
     load.classList.add('loaded');
     copy.classList.remove('loaded2');
   }
-  setTimeout(delayedFunction, 1500);
+  setTimeout(delayedFunction, 1000);
   
 
 };
