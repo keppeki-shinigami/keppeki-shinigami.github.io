@@ -526,7 +526,7 @@ footer {
         opacity: 0.5;
     }
     100% {
-        opacity: 0.2;
+        opacity: 0;
     }
  }
 
@@ -608,8 +608,120 @@ footer {
     top: -100px;
     left: 50px;
  }
-
+ #light::before {
+    position: absolute;
+    display: block;
+    content:'照明';
+    font-size: 7rem;
+    top: -100px;
+    left: 50px;
+ }
+ #item::before {
+    position: absolute;
+    display: block;
+    content:'小道具';
+    font-size: 7rem;
+    top: -100px;
+    left: 50px;
+ }
+ #pro::before {
+    position: absolute;
+    display: block;
+    content:'制作';
+    font-size: 7rem;
+    top: -100px;
+    left: 50px;
+ }
+ #actor::before {
+    position: absolute;
+    display: block;
+    content:'役者';
+    font-size: 7rem;
+    top: -100px;
+    left: 50px;
+ }
  img.magemage {
     margin-top: 3vh;
     margin-bottom: 10vh;
  }
+
+
+ .caption {
+    display: block;
+    text-align: center;
+ }
+
+ #place2 {
+    margin-bottom: 5vh;
+ }
+ #place2::before {
+    position: absolute;
+    display: block;
+    content:'場所';
+    font-size: 7rem;
+    top: -100px;
+    left: 50px;
+ }
+ .left {
+    text-align: left;
+ }
+
+ /*---役者画像---*/
+ #actor1, #actor2, #actor3, #actor4 {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6rem;;
+    width: 20rem;
+    height: 25rem;
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.603);
+    background-repeat:  no-repeat;
+    background-size: contain;
+
+ }
+
+ #actor1 {
+    background-image: url(../img/otoko.JPG)
+ }
+ #actor2 {
+    background-image: url(../img/shinigami.JPG)
+ }
+ #actor3 {
+    background-image: url(../img/onnna.JPG)
+ }
+ #actor4 {
+    background-image: url(../img/hanashika.JPG)
+ }
+ 
+ #botnam1, #botnam2, #botnam3, #botnam4 {
+    position: absolute;
+    width: 20rem;
+    font-size: 2.5rem;
+    text-align: center;
+    bottom: -3.5rem;
+    left: 0;
+ }
+ #column1, #column2 {
+    margin: 0 auto;
+    max-width: 600px;
+ }
+
+ @media screen and (min-width: 720px) {
+    #column1 {
+        display: flex;
+    }
+    #column2 {
+        display: flex;
+    }
+ }
+
+ #actor4 {
+    background-image: url('/img/hamana.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+
+ 
