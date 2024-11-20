@@ -99,7 +99,7 @@ summary.addEventListener('click', function() {
   setTimeout(delayedFunction, 0);
 });
 
-
+/*
 $(document).on('click', 'a.lilili', function(e) {
 	e.preventDefault(); //htmlデフォルトの挙動をキャンセルする
   const link = $(this).attr('href');
@@ -113,15 +113,14 @@ $(document).on('click', 'a.lilili', function(e) {
 
 /*
 https://aya404.com/blog/develop/167_a-href-jquery/
+https://alicia-ing.com/programming/front-end/arrow-horizon-scroll/
 */
 
+/*
+const amazing1 = document.getElementById('amazing')
 
+amazing1.addEventListener('click', function() {
+  amazing1.classList.addClass('ch2');
+});
 
-
-
-
-
-
-
-
-
+*/
