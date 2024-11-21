@@ -77,6 +77,12 @@ body {
     opacity: 0; 
     z-index: -1 !important;
 }
+#load.fadeOut {
+    animation: none !important;
+    transition: 0.3s;
+    opacity: 0; 
+    z-index: -1 !important;
+}
 .loaded {
     animation: none !important;
     transition: 0.5s;
@@ -506,7 +512,7 @@ footer {
 }
 
 #copy {
-    opacity: 0;
+    opacity: 0 ;
     position: fixed;
     margin: 0 auto;
     left: calc(50% - 35px) ;
