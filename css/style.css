@@ -71,6 +71,12 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+#load-symbol.fadeOut {
+    animation: none !important;
+    transition: 0.3s;
+    opacity: 0; 
+    z-index: -1 !important;
+}
 .loaded {
     animation: none !important;
     transition: 0.5s;
@@ -724,6 +730,14 @@ footer {
     position: absolute;
     display: block;
     content:'稽古場動画';
+    font-size: 5rem;
+    top: -100px;
+    left: 50px;
+ }
+ #pv2::before {
+    position: absolute;
+    display: block;
+    content:'冒頭音声';
     font-size: 5rem;
     top: -100px;
     left: 50px;

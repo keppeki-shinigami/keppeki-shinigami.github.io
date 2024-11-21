@@ -14,8 +14,8 @@ window.onload = function() {
   const copy = document.getElementById('copy');
   const symbol = document.getElementById('load-symbol');
   async function hogehoge() {
-    symbol.classList.add('loaded');
-    await sleep(1000);
+    symbol.classList.add('fadeOut');
+    await sleep(1500);
     copy.classList.add('loaded2');
   }
   hogehoge();
