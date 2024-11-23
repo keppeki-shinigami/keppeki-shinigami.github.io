@@ -748,6 +748,14 @@ footer {
     top: -100px;
     left: 50px;
  }
+ #pv3::before {
+    position: absolute;
+    display: block;
+    content:'道案内';
+    font-size: 5rem;
+    top: -100px;
+    left: 50px;
+ }
  #pv-menu {
     display: block;
     margin: 0 auto;
