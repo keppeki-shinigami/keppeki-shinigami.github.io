@@ -308,7 +308,7 @@ p {
 .news {
     display: block;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-bottom: 10vh;
     font-size: 1.8rem;
     width: 100vw;
@@ -780,3 +780,17 @@ footer {
     background-image: url(../img/logo-white.png);
  }
     */
+
+#end::before {
+    position: absolute;
+    display: block;
+    content:'終演';
+    font-size: 5rem;
+    top: -100px;
+    left: 50px;
+ }
+
+ #end {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+ }
